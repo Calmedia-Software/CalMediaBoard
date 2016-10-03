@@ -12,7 +12,7 @@ $benutzergruppe = array();
 
 // Benutzerrechte (1 = hat die Berechtigung, 0 = hat die Berechtigung nicht)
 
-// Administrator
+// Administrator (gruppen_id 0)
 $benutzergruppe[] = array('gruppe' => 'Administrator',
 			  'kann_forum_betreten' => 1, // Global
 			  'kann_admincp_betreten' => 1,
@@ -26,7 +26,7 @@ $benutzergruppe[] = array('gruppe' => 'Administrator',
 			  'kann_beiträge_bearbeiten' => 1,
 			  'kann_beiträge_löschen' => 1);
 
-// Moderator
+// Moderator (gruppen_id 1)
 $benutzergruppe[] = array('gruppe' => 'Moderator',
 			  'kann_forum_betreten' => 1, // Global
 			  'kann_admincp_betreten' => 0,
@@ -40,7 +40,7 @@ $benutzergruppe[] = array('gruppe' => 'Moderator',
 			  'kann_beiträge_bearbeiten' => 1,
 			  'kann_beiträge_löschen' => 1);
 
-// Mitglied
+// Mitglied (gruppen_id 2)
 $benutzergruppe[] = array('gruppe' => 'Mitglied',
 			  'kann_forum_betreten' => 1, // Global
 			  'kann_admincp_betreten' => 0,
@@ -54,7 +54,7 @@ $benutzergruppe[] = array('gruppe' => 'Mitglied',
 			  'kann_beiträge_bearbeiten' => 0,
 			  'kann_beiträge_löschen' => 0);
 
-// Nicht aktiviert
+// Nicht aktiviert (gruppen_id 3)
 $benutzergruppe[] = array('gruppe' => 'Nicht aktiviert',
 			  'kann_forum_betreten' => 1, // Global
 			  'kann_admincp_betreten' => 0,
@@ -68,7 +68,7 @@ $benutzergruppe[] = array('gruppe' => 'Nicht aktiviert',
 			  'kann_beiträge_bearbeiten' => 0,
 			  'kann_beiträge_löschen' => 0);
 
-// Gesperrt
+// Gesperrt (gruppen_id 4)
 $benutzergruppe[] = array('gruppe' => 'Gesperrt',
 			  'kann_forum_betreten' => 0, // Global
 			  'kann_admincp_betreten' => 0,
